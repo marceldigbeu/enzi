@@ -1,42 +1,42 @@
-# Mod?les ENZI
+# Modèles ENZI
 
-Utilisez ce fichier quand ENZI a besoin d'un mod?le de r?ponse stable pour un type d'explication r?current.
+Utilisez ce fichier quand ENZI a besoin d'un modèle de réponse stable pour un type d'explication récurrent.
 
-Choisissez le plus petit mod?le adapt?. Ne combinez pas tous les mod?les sauf si l'utilisateur demande explicitement un pack p?dagogique complet.
+Choisissez le plus petit modèle adapté. Ne combinez pas tous les modèles sauf si l'utilisateur demande explicitement un pack pédagogique complet.
 
-## 1. Mod?le Algorithme
+## 1. Modèle Algorithme
 
-? utiliser pour :
+À utiliser pour :
 - tri
 - parcours de graphe
 - programmation dynamique
-- r?cursion
+- récursion
 - recherche
 - logique de pipeline
 
 Forme de sortie :
-- `(Syst?me)` ce que fait l'algorithme globalement
-- `[N?ud Critique]` le goulot de correction
+- `(Système)` ce que fait l'algorithme globalement
+- `[Nœud Critique]` le goulot de correction
 - `[Plan]` un `graph TD` ou `sequenceDiagram`
 - `[Pseudo-code]` un bloc compact si l'utilisateur apprend l'algorithme
-- `[M?canique]` les ?tapes ordonn?es
+- `[Mécanique]` les étapes ordonnées
 - `[Audit Ligne]` l'explication ligne par ligne si l'utilisateur veut comprendre les instructions
-- `[D?ploiement]` une analogie d'ing?nierie et un rep?re m?moire
+- `[Déploiement]` une analogie d'ingénierie et un repère mémoire
 
-Questions auxquelles r?pondre :
+Questions auxquelles répondre :
 - qu'est-ce qui entre dans l'algorithme
 - quelle transformation a lieu
-- o? la correction peut ?chouer
-- quel est le cas de base ou la condition d'arr?t
+- où la correction peut échouer
+- quel est le cas de base ou la condition d'arrêt
 - quelles lignes sont hors boucle, dans boucle, des affectations, des conditions, des comparaisons ou des retours
 
-?tiquettes d'op?ration ? utiliser quand elles sont pertinentes :
+Étiquettes d'opération à utiliser quand elles sont pertinentes :
 - `Affectation`
 - `Condition`
 - `Comparaison`
-- `Contr?le de boucle`
-- `Arithm?tique`
-- `Acc?s / indexation`
+- `Contrôle de boucle`
+- `Arithmétique`
+- `Accès / indexation`
 - `Appel`
 - `Retour`
 - `Hors boucle`
@@ -44,98 +44,98 @@ Questions auxquelles r?pondre :
 
 Tableau compact d'audit ligne par ligne :
 
-| Ligne | R?le | Type d'op?ration | Explication |
+| Ligne | Rôle | Type d'opération | Explication |
 | --- | --- | --- | --- |
-| 1 | Initialiser | Affectation, Hors boucle | Stocke la valeur de d?part |
-| 2 | Tester | Condition, Comparaison | D?cide s'il faut continuer |
-| 3 | Mettre ? jour | Affectation, Arithm?tique, Dans boucle | Fait avancer l'?tat |
+| 1 | Initialiser | Affectation, Hors boucle | Stocke la valeur de départ |
+| 2 | Tester | Condition, Comparaison | Décide s'il faut continuer |
+| 3 | Mettre à jour | Affectation, Arithmétique, Dans boucle | Fait avancer l'état |
 
-## 2. Mod?le Preuve
+## 2. Modèle Preuve
 
-? utiliser pour :
+À utiliser pour :
 - correction
-- r?currence
+- récurrence
 - invariants
 - induction
 - terminaison
 
 Forme de sortie :
-- `(Syst?me)` carte du th?or?me ou de l'assertion
-- `[N?ud Critique]` l'?tape logique porteuse
+- `(Système)` carte du théorème ou de l'assertion
+- `[Nœud Critique]` l'étape logique porteuse
 - `[Plan]` flux de preuve en Mermaid
-- `[M?canique]` base / hypoth?se / ?tape / conclusion
-- `[D?ploiement]` une interpr?tation d'ing?nierie
+- `[Mécanique]` base / hypothèse / étape / conclusion
+- `[Déploiement]` une interprétation d'ingénierie
 
 Squelette compact de preuve :
 
-| Bloc | R?le |
+| Bloc | Rôle |
 | --- | --- |
-| Base | Montrer que la propri?t? d?marre correctement |
-| Hypoth?se | Supposer qu'elle tient sur les cas plus petits ou ant?rieurs |
-| ?tape | Montrer que l'hypoth?se impose le cas suivant |
-| Conclusion | Fermer la boucle de r?currence ou d'invariant |
+| Base | Montrer que la propriété démarre correctement |
+| Hypothèse | Supposer qu'elle tient sur les cas plus petits ou antérieurs |
+| Étape | Montrer que l'hypothèse impose le cas suivant |
+| Conclusion | Fermer la boucle de récurrence ou d'invariant |
 
-## 3. Mod?le Architecture
+## 3. Modèle Architecture
 
-? utiliser pour :
-- syst?mes logiciels
+À utiliser pour :
+- systèmes logiciels
 - API
 - services
 - modules
-- flux de donn?es
+- flux de données
 - relations entre composants
 
 Forme de sortie :
-- `(Syst?me)` carte d'architecture
-- `[N?ud Critique]` fronti?re de contr?le ou goulot de d?pendance
+- `(Système)` carte d'architecture
+- `[Nœud Critique]` frontière de contrôle ou goulot de dépendance
 - `[Plan]` `graph TD` ou `classDiagram`
-- `[M?canique]` flux de requ?te ou de donn?es
-- `[D?ploiement]` implication op?rationnelle ou note de passage ? l'?chelle
+- `[Mécanique]` flux de requête ou de données
+- `[Déploiement]` implication opérationnelle ou note de passage à l'échelle
 
-Questions auxquelles r?pondre :
-- qui parle ? qui
-- ce que poss?de chaque bloc
-- o? vit l'?tat
-- o? la panne se propage
+Questions auxquelles répondre :
+- qui parle à qui
+- ce que possède chaque bloc
+- où vit l'état
+- où la panne se propage
 
-## 4. Mod?le Flux de Code
+## 4. Modèle Flux de Code
 
-? utiliser pour :
+À utiliser pour :
 - fonctions
-- m?thodes
+- méthodes
 - flux de programme
-- ordre d'ex?cution
+- ordre d'exécution
 
 Forme de sortie :
-- `(Syst?me)` objectif du chemin de code
-- `[N?ud Critique]` branche, invariant ou effet de bord ? surveiller
+- `(Système)` objectif du chemin de code
+- `[Nœud Critique]` branche, invariant ou effet de bord à surveiller
 - `[Plan]` `sequenceDiagram` ou `graph TD`
-- `[Pseudo-code]` flux de contr?le simplifi? quand cela aide
-- `[M?canique]` flux de contr?le ordonn?
+- `[Pseudo-code]` flux de contrôle simplifié quand cela aide
+- `[Mécanique]` flux de contrôle ordonné
 - `[Audit Ligne]` explication ligne par ligne si l'utilisateur veut comprendre chaque instruction
-- `[D?ploiement]` angle d?bogage ou maintenance
+- `[Déploiement]` angle débogage ou maintenance
 
-Questions auxquelles r?pondre :
-- qu'est-ce qui d?marre le flux
+Questions auxquelles répondre :
+- qu'est-ce qui démarre le flux
 - quelles branches existent
-- ce qui modifie l'?tat
+- ce qui modifie l'état
 - ce qui met fin au flux
 
-## 5. Mod?le Comparaison
+## 5. Modèle Comparaison
 
-? utiliser pour :
+À utiliser pour :
 - file vs pile
 - BFS vs DFS
 - SQL vs NoSQL
-- r?cursion vs it?ration
+- récursion vs itération
 - autres paires similaires
 
 Forme de sortie :
-- `(Syst?me)` m?me probl?me, deux strat?gies
-- `[N?ud Critique]` le vrai crit?re de d?cision
+- `(Système)` même problème, deux stratégies
+- `[Nœud Critique]` le vrai critère de décision
 - `[Plan]` un diagramme compact si utile
-- `[M?canique]` un tableau comparatif
-- `[D?ploiement]` un sc?nario de choix pour chaque option
+- `[Mécanique]` un tableau comparatif
+- `[Déploiement]` un scénario de choix pour chaque option
 
 Tableau comparatif compact :
 
@@ -144,13 +144,13 @@ Tableau comparatif compact :
 | A | ... | ... | ... |
 | B | ... | ... | ... |
 
-## R?gle de s?lection
+## Règle de sélection
 
 Si l'utilisateur demande :
-- "explique comment ?a marche" -> commencez par Algorithme ou Flux de code
+- "explique comment ça marche" -> commencez par Algorithme ou Flux de code
 - "prouve que c'est correct" -> utilisez Preuve
-- "montre-moi le syst?me" -> utilisez Architecture
+- "montre-moi le système" -> utilisez Architecture
 - "lequel dois-je choisir" -> utilisez Comparaison
 - "explique chaque ligne" ou "donne le pseudocode" -> ajoutez `[Pseudo-code]` et `[Audit Ligne]`
 
-Si la demande m?lange deux modes, utilisez d'abord le mode principal puis empruntez seulement un ?l?ment de support au second.
+Si la demande mélange deux modes, utilisez d'abord le mode principal puis empruntez seulement un élément de support au second.
