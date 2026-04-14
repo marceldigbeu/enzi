@@ -1,23 +1,23 @@
-# Exemples guid?s ENZI
+# Exemples guidés ENZI
 
-Utilisez ce fichier quand l'utilisateur a besoin d'un apprentissage guid?, pas seulement d'une r?ponse directe.
+Utilisez ce fichier quand l'utilisateur a besoin d'un apprentissage guidé, pas seulement d'une réponse directe.
 
 Pour chaque exemple :
 - commencez par la vue d'ensemble
-- isolez le n?ud critique
+- isolez le nœud critique
 - montrez le pseudocode quand il aide
 - expliquez ligne par ligne quand l'apprenant le demande
-- nommez explicitement les types d'op?rations
-- ajoutez un ancrage m?moire ? la fin
+- nommez explicitement les types d'opérations
+- ajoutez un ancrage mémoire à la fin
 
 ## 1. Recherche binaire
 
-### `(Syst?me)`
-- La recherche binaire est un syst?me de recherche dans une liste tri?e.
-- Elle r?duit la zone de recherche de moiti? ? chaque it?ration.
+### `(Système)`
+- La recherche binaire est un système de recherche dans une liste triée.
+- Elle réduit la zone de recherche de moitié à chaque itération.
 
-### `[N?ud Critique]`
-- **N?ud Critique :** la liste doit ?tre tri?e.
+### `[Nœud Critique]`
+- **Nœud Critique :** la liste doit être triée.
 
 ### `[Pseudo-code]`
 ```text
@@ -39,29 +39,29 @@ binary_search(L, x):
 ```
 
 ### `[Audit Ligne]`
-| Ligne | Type d'op?ration | Explication |
+| Ligne | Type d'opération | Explication |
 | --- | --- | --- |
 | `start = 0` | Affectation, Hors boucle | Initialise la borne gauche. |
-| `end = len(L) - 1` | Affectation, Arithm?tique, Hors boucle | Initialise la borne droite. |
-| `while start <= end` | Condition, Comparaison, Contr?le de boucle | Continue tant que la zone de recherche existe. |
-| `mid = floor((start + end) / 2)` | Affectation, Arithm?tique, Dans boucle | Calcule l'indice du milieu. |
-| `if L[mid] == x` | Acc?s / indexation, Comparaison, Condition, Dans boucle | V?rifie si la valeur centrale est la cible. |
-| `return mid` | Retour, Dans boucle | S'arr?te imm?diatement si l'?l?ment est trouv?. |
-| `start = mid + 1` | Affectation, Arithm?tique, Dans boucle | Se d?place vers la droite. |
-| `end = mid - 1` | Affectation, Arithm?tique, Dans boucle | Se d?place vers la gauche. |
-| `return -1` | Retour, Hors boucle | Signale l'?chec apr?s la boucle. |
+| `end = len(L) - 1` | Affectation, Arithmétique, Hors boucle | Initialise la borne droite. |
+| `while start <= end` | Condition, Comparaison, Contrôle de boucle | Continue tant que la zone de recherche existe. |
+| `mid = floor((start + end) / 2)` | Affectation, Arithmétique, Dans boucle | Calcule l'indice du milieu. |
+| `if L[mid] == x` | Accès / indexation, Comparaison, Condition, Dans boucle | Vérifie si la valeur centrale est la cible. |
+| `return mid` | Retour, Dans boucle | S'arrête immédiatement si l'élément est trouvé. |
+| `start = mid + 1` | Affectation, Arithmétique, Dans boucle | Se déplace vers la droite. |
+| `end = mid - 1` | Affectation, Arithmétique, Dans boucle | Se déplace vers la gauche. |
+| `return -1` | Retour, Hors boucle | Signale l'échec après la boucle. |
 
-### Ancrage m?moire
-- Liste tri?e -> test du milieu -> r?duction de moiti?.
+### Ancrage mémoire
+- Liste triée -> test du milieu -> réduction de moitié.
 
 ## 2. Tri fusion
 
-### `(Syst?me)`
-- Le tri fusion d?coupe un grand probl?me de tri en deux plus petits probl?mes.
-- Puis il reconstruit le r?sultat en fusionnant deux moiti?s d?j? tri?es.
+### `(Système)`
+- Le tri fusion découpe un grand problème de tri en deux plus petits problèmes.
+- Puis il reconstruit le résultat en fusionnant deux moitiés déjà triées.
 
-### `[N?ud Critique]`
-- **N?ud Critique :** `merge` doit combiner correctement deux listes d?j? tri?es.
+### `[Nœud Critique]`
+- **Nœud Critique :** `merge` doit combiner correctement deux listes déjà triées.
 
 ### `[Pseudo-code]`
 ```text
@@ -77,27 +77,27 @@ merge_sort(L):
 ```
 
 ### `[Audit Ligne]`
-| Ligne | Type d'op?ration | Explication |
+| Ligne | Type d'opération | Explication |
 | --- | --- | --- |
 | `n = len(L)` | Affectation, Appel, Hors boucle | Stocke la taille de la liste. |
-| `if n <= 1` | Condition, Comparaison, Hors boucle | D?tecte le cas de base. |
-| `return L` | Retour, Hors boucle | Arr?te la r?cursion sur une liste triviale. |
-| `mid = floor(n / 2)` | Affectation, Arithm?tique, Hors boucle | Calcule le point de d?coupe. |
-| `left = merge_sort(L[0:mid])` | Affectation, Appel, Acc?s / indexation, Hors boucle | Trie r?cursivement la moiti? gauche. |
-| `right = merge_sort(L[mid:n])` | Affectation, Appel, Acc?s / indexation, Hors boucle | Trie r?cursivement la moiti? droite. |
-| `return merge(left, right)` | Retour, Appel, Hors boucle | Fusionne les deux moiti?s tri?es. |
+| `if n <= 1` | Condition, Comparaison, Hors boucle | Détecte le cas de base. |
+| `return L` | Retour, Hors boucle | Arrête la récursion sur une liste triviale. |
+| `mid = floor(n / 2)` | Affectation, Arithmétique, Hors boucle | Calcule le point de découpe. |
+| `left = merge_sort(L[0:mid])` | Affectation, Appel, Accès / indexation, Hors boucle | Trie récursivement la moitié gauche. |
+| `right = merge_sort(L[mid:n])` | Affectation, Appel, Accès / indexation, Hors boucle | Trie récursivement la moitié droite. |
+| `return merge(left, right)` | Retour, Appel, Hors boucle | Fusionne les deux moitiés triées. |
 
-### Ancrage m?moire
-- D?couper, trier plus petit, fusionner proprement.
+### Ancrage mémoire
+- Découper, trier plus petit, fusionner proprement.
 
 ## 3. Somme dans une boucle
 
-### `(Syst?me)`
-- Cet algorithme accumule les valeurs de `0` ? `n` dans un total courant.
-- Il se comporte comme un compteur avec un registre m?moire.
+### `(Système)`
+- Cet algorithme accumule les valeurs de `0` à `n` dans un total courant.
+- Il se comporte comme un compteur avec un registre mémoire.
 
-### `[N?ud Critique]`
-- **N?ud Critique :** `tmp` doit toujours contenir la somme partielle d?j? trait?e.
+### `[Nœud Critique]`
+- **Nœud Critique :** `tmp` doit toujours contenir la somme partielle déjà traitée.
 
 ### `[Pseudo-code]`
 ```text
@@ -109,12 +109,12 @@ sum_int(n):
 ```
 
 ### `[Audit Ligne]`
-| Ligne | Type d'op?ration | Explication |
+| Ligne | Type d'opération | Explication |
 | --- | --- | --- |
 | `tmp = 0` | Affectation, Hors boucle | Initialise l'accumulateur. |
-| `for i in range(n + 1)` | Contr?le de boucle, Appel, Arithm?tique, Hors boucle | Met en place l'it?ration de `0` ? `n`. |
-| `tmp = tmp + i` | Affectation, Arithm?tique, Dans boucle | Ajoute la valeur courante au total cumul?. |
-| `return tmp` | Retour, Hors boucle | Renvoie la somme finale accumul?e. |
+| `for i in range(n + 1)` | Contrôle de boucle, Appel, Arithmétique, Hors boucle | Met en place l'itération de `0` à `n`. |
+| `tmp = tmp + i` | Affectation, Arithmétique, Dans boucle | Ajoute la valeur courante au total cumulé. |
+| `return tmp` | Retour, Hors boucle | Renvoie la somme finale accumulée. |
 
-### Ancrage m?moire
-- `tmp` est le r?servoir de stockage ; chaque boucle ajoute une unit? de plus.
+### Ancrage mémoire
+- `tmp` est le réservoir de stockage ; chaque boucle ajoute une unité de plus.
