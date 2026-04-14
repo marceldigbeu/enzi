@@ -64,7 +64,7 @@ Exemples de demandes adaptées :
 
 
 
-## ?? Installation en 2 minutes avec Codex CLI
+## Installation en 2 minutes avec Codex CLI
 
 ```bash
 # 1. Clone le skill
