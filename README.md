@@ -62,6 +62,27 @@ Exemples de demandes adaptées :
 - « Cartographie le flux de ce code et montre le nœud critique »
 - « Explique chaque ligne avec les types d'opérations »
 
+
+
+## ?? Installation en 2 minutes avec Codex CLI
+
+```bash
+# 1. Clone le skill
+git clone https://github.com/marceldigbeu45-ux/enzi
+
+# 2. Lance Codex avec ENZI
+cd enzi
+codex .
+```
+
+Ou sans cloner, directement depuis ton projet :
+
+```bash
+codex --instructions path/to/enzi/SKILL.md
+```
+
+Pr?requis : [Node.js](https://nodejs.org) puis `npm install -g @openai/codex`
+
 ## Publication GitHub
 
 Ce dépôt est autonome et peut être versionné directement comme dépôt GitHub.
