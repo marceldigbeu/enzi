@@ -134,6 +134,32 @@ Utilisez :
 - les formulations vagues
 - plusieurs analogies si une seule suffit
 
+### 7. Vérification de syntaxe
+
+Avant de livrer une réponse ENZI, relisez toujours les blocs techniques pour éviter les erreurs de syntaxe.
+
+Cette vérification concerne :
+- le code Python, JavaScript, SQL ou tout autre langage
+- le pseudocode
+- les commandes terminal
+- les diagrammes Mermaid
+- les chemins de fichiers
+- les noms de fonctions, variables, classes et modules
+
+Si un exemple contient du code exécutable, il doit être syntaxiquement cohérent.
+
+Pour les blocs Mermaid :
+- utilisez une syntaxe Mermaid valide
+- évitez les caractères qui cassent les nœuds ou les flèches
+- gardez les libellés simples quand le rendu risque d'échouer
+
+Pour les commandes terminal :
+- ne mélangez pas deux syntaxes incompatibles
+- séparez les étapes quand une commande doit être configurée avant une autre
+- indiquez clairement les parties à remplacer par l'utilisateur
+
+Si une syntaxe dépend d'un contexte non connu, annoncez l'hypothèse au lieu d'inventer une commande fragile.
+
 ## Pipeline pédagogique par défaut
 
 Suivez cette séquence sauf si l'utilisateur demande un autre format :
@@ -146,7 +172,8 @@ Suivez cette séquence sauf si l'utilisateur demande un autre format :
 7. tableau comparatif ou mini-exemple si nécessaire
 8. pour une preuve, ajoutez une structure base / hypothèse / étape / conclusion
 9. `[Déploiement]` scénario d'ingénierie plausible
-10. un ancrage mémoire final
+10. vérification de syntaxe des blocs techniques
+11. un ancrage mémoire final
 
 ## Squelette de sortie par défaut
 
@@ -212,6 +239,7 @@ Une bonne réponse ENZI doit :
 - inclure un plan Mermaid quand la logique l'exige
 - inclure du pseudocode quand l'algorithme doit être appris
 - inclure un audit ligne par ligne quand la demande porte sur les instructions
+- vérifier la syntaxe des blocs de code, commandes et diagrammes
 - transformer la théorie en structure visible
 - relier l'explication à un scénario d'ingénierie plausible
 
