@@ -1,194 +1,163 @@
-# ENZI
+# ENZI Brand OS
 
-ENZI est un skill Claude Code / Codex conçu pour enseigner, analyser et stratégiser — avec une méthode architecturale, visuelle et structurée.
+**See the whole system. Find the critical node. Make the result converge.**
 
-Il opère en **3 domaines** :
+ENZI is a reusable skill for Codex and Claude Code that combines architectural explanation with personal-brand systems. It helps users understand complex technical subjects and turn expertise into a coherent position, visual direction, profile system, content strategy, and sustainable multi-network plan.
 
-| Domaine | Ce qu'il fait |
-|---|---|
-| **Enseignement** | Explique algorithmes, preuves, code, architecture avec une carte descendante |
-| **Creator** | Analyse les algorithmes de recommandation et construit des stratégies de publication |
-| **Personal Branding** | Identifie l'archétype de marque, définit palette, tone of voice et stratégie multi-plateformes |
+ENZI does not promise virality, invent credentials, or publish on a user's behalf without explicit approval.
 
----
+## What ENZI does
 
-## Modes disponibles
+| System | Output |
+| --- | --- |
+| Architectural explanation | System map, critical node, concise mechanics, pseudocode, and line-level audit when useful |
+| Brand core | Audience, problem, promise, differentiation, evidence, voice, and boundaries |
+| Profile system | One factual master profile with native LinkedIn, YouTube, Instagram, X, TikTok, or other relevant adaptations |
+| Visual system | Palette roles, typography direction, photography principles, reusable visual invariants, and image briefs |
+| Creator strategy | Three to five content pillars, source-content logic, native derivatives, calls to action, and learning signals |
+| Editorial planning | A realistic calendar based on the user's actual weekly capacity |
+| Improvement loop | Maker/checker iteration, PASS/FAIL rubric, persistent learning, budget, and stopping condition |
 
-### Mode Enseignement (défaut)
+## The ENZI method
 
-Pour tout sujet technique : algorithme, preuve, flux de code, architecture système.
+1. **Map the system** before discussing isolated details.
+2. **Name the critical node** — the decision that controls the rest.
+3. **Stabilize the core** — facts, promise, evidence, voice, and privacy limits.
+4. **Build native adapters** instead of copying the same profile or post everywhere.
+5. **Produce one coherent batch** from one priority hypothesis.
+6. **Check the artifacts** against a named PASS/FAIL rubric.
+7. **Record the learning** and stop on validation or an explicit limit.
 
-Pipeline de sortie :
-1. `(Système)` — carte d'ensemble
-2. `[Nœud Critique]` — l'idée porteuse
-3. `[Plan]` — diagramme Mermaid
-4. `[Pseudo-code]` — si l'algorithme doit être appris
-5. `[Mécanique]` — explication pas à pas
-6. `[Audit Ligne]` — ligne par ligne avec types d'opérations
-7. `[Déploiement]` — ancrage ingénierie
+Typical responses begin with:
 
-Toutes les réponses s'ouvrent avec `[ENZI ACTIF]`.
-
----
-
-### Mode Analyse de Systèmes de Recommandation
-
-Activé quand l'utilisateur demande comment fonctionne un algorithme de plateforme.
-
-Plateformes couvertes : TikTok · YouTube · YouTube Shorts · Instagram Reels · Spotify · Netflix · LinkedIn · X/Twitter · Pinterest
-
-Ancres spécifiques :
-- `[Pipeline]` — flux de bout en bout
-- `[Signaux]` — implicites vs explicites
-- `[Score]` — fonction de classement
-- `[Biais]` — bulles de filtre, froid démarrage
-- `[Levier]` — ce que le créateur peut actionner
-
----
-
-### Mode Profil Créateur
-
-Construit un profil personnalisé pour percer sur une ou plusieurs plateformes.
-
-```
-[Profil Créateur]
-Niche : [thématique principale]
-Plateforme : [TikTok / YouTube / Reels / multi]
-Format : [face caméra / voix off / montage / live…]
-Audience cible : [description courte]
-Objectif : [notoriété / abonnés / monétisation / test]
-Rythme : [x vidéos / semaine]
-Niveau actuel : [débutant / en croissance / établi]
+```text
+[ENZI ACTIF]
+(System)
+[Nœud Critique]
 ```
 
----
+Additional sections appear only when they improve the answer. The current skill keeps its stable French anchors: `[Plan]`, `[Mécanique]`, `[Identité de Marque]`, `[Stratégie Multi-Réseaux]`, `[Calendrier]`, `[Boucle]`, and `[Déploiement]`.
 
-### Mode Stratégie de Publication
+## Personal branding system
 
-Génère une stratégie de posting adaptée à la niche et à la plateforme.
+ENZI keeps the following elements stable across networks:
 
-Ancres :
-- `[Calendrier]` — créneaux optimaux par jour et plateforme
-- `[Format Gagnant]` — durée et format selon la niche
-- `[Événements]` — tendances et calendrier éditorial à anticiper
-- `[Fréquence]` — rythme algorithmique optimal
-- `[Hook]` — 3 accroches adaptées à la niche
+- real name and profession;
+- audience and specific promise;
+- defensible evidence;
+- voice, values, and boundaries;
+- proprietary topics and recognizable visual invariants.
 
----
+It adapts the hook, length, context, format, cadence, and call to action to the role of each network. Missing evidence is marked **to be confirmed** rather than invented.
 
-### Mode Plan HTML
+## Loop engineering
 
-Génère un fichier HTML autonome (tableau de bord créateur) exportable sur le bureau, avec :
-- profil créateur en carte visuelle
-- planning semaine par semaine avec couleurs d'accent
-- fiche par vidéo : date, créneau, hook, script horodaté, CTA
-- bloc stratégie de conversion
+ENZI can be paired with the companion `loop-engineering` skill to deepen a brand, content plan, profile, or visual system.
 
----
+The stopping condition follows this shape:
 
-### Mode Script Rapide
-
-Génère un script TikTok / YouTube Shorts en 5 blocs horodatés :
-
-| Bloc | Durée | Rôle |
-|---|---|---|
-| Hook | 0–3s | Force à ne pas scroller |
-| Setup | 3–15s | Pose le problème |
-| Corps | 15–45s | Le contenu réel |
-| Punchline | 45–55s | Ce que l'audience retient |
-| CTA | 55–60s | Une seule action demandée |
-
----
-
-### Mode Personal Branding
-
-Construit une identité de marque complète pour devenir visible sur les réseaux.
-
-**7 archétypes** : La Star · L'Artiste · L'Expert · L'Entrepreneur · Le Créateur · L'Activiste · Le Luxe
-
-Livrables :
-```
-[Identité de Marque]
-Archétype dominant : ...
-WHY : ...
-Valeurs : ...
-Mot signature : ...
-Palette de couleurs : dominante / secondaire / accent
-Tone of voice : ...
-Style visuel : ...
+```text
+[counted deliverables] are complete AND every deliverable is marked PASS
+by the checker on [named rubric], capped at [budget and maximum rounds].
 ```
 
-Inclut : psychologie des couleurs, stratégie multi-plateformes, erreurs à éviter, export HTML branding.
+The maker produces the batch. A separate checker grades the artifacts. The loop stores the verdict, evidence, decision, and next experiment. Human approval remains mandatory before public profile changes or publishing.
 
----
+## Example request
 
-## Structure du dépôt
-
+```text
+I am an independent cybersecurity consultant helping SME leaders turn technical
+risks into clear decisions. Build my positioning, master profile, LinkedIn,
+YouTube and Instagram adaptations, visual direction, four content pillars,
+a four-week plan limited to six hours per week, and a maker/checker loop.
 ```
+
+A complete ENZI result can include:
+
+- a specific positioning statement;
+- a master profile and network-native bios;
+- an accessible visual direction and image brief;
+- four content pillars tied to evidence;
+- a capacity-aware four-week plan;
+- an explicit intent and learning signal for every content item;
+- an ENZI Brand PASS/FAIL report and next experiment.
+
+## Installation
+
+### Codex
+
+```powershell
+git clone https://github.com/marceldigbeu/enzi "$env:USERPROFILE\.codex\skills\enzi"
+```
+
+Restart Codex after installation, then invoke the skill naturally:
+
+```text
+Use ENZI to map the whole system, identify the critical node, and explain the mechanics.
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/marceldigbeu/enzi "$HOME/.claude/skills/enzi"
+```
+
+Restart Claude Code after installation. ENZI can then be invoked from a relevant request or explicitly by name.
+
+## Example prompts
+
+### Technical understanding
+
+- “Explain this algorithm by showing me the whole system first.”
+- “Map the code flow and identify the critical node.”
+- “Give me the invariant, pseudocode, and a line-by-line audit.”
+
+### Personal branding
+
+- “Build my personal brand without inventing evidence.”
+- “Create one master profile and native versions for LinkedIn, YouTube, and Instagram.”
+- “Define my visual direction before a photo shoot.”
+
+### Content and planning
+
+- “Turn my expertise into four content pillars and a sustainable four-week plan.”
+- “Adapt one source idea natively across three networks.”
+- “Export the strategy as a standalone responsive HTML dashboard.”
+
+### Iteration
+
+- “Use ENZI with loop engineering until every deliverable passes ENZI Brand v1, with three rounds maximum.”
+- “Audit my current profiles, identify the first failing criterion, and propose one next experiment.”
+
+## Repository structure
+
+```text
 enzi/
-├── SKILL.md                  # Définition principale du skill
-├── references/
-│   ├── patterns.md           # Modèles de réponse stables (algo, preuve, archi, comparaison)
-│   ├── examples.md           # Exemples pédagogiques résolus (binary search, merge sort, sum)
-│   └── identity.md           # Identité visuelle et de marque ENZI
+├── SKILL.md
 ├── agents/
-│   └── openai.yaml           # Métadonnées d'interface Codex
-├── assets/                   # Icônes ENZI
+│   └── openai.yaml
+├── assets/
+│   ├── enzi-large.svg
+│   ├── enzi-small.svg
+│   ├── enzi-v2-large.svg
+│   └── enzi-v2-small.svg
+├── references/
+│   ├── examples.md
+│   ├── identity.md
+│   └── patterns.md
 └── README.md
 ```
 
----
+## Principles and boundaries
 
-## Utiliser ENZI
+- No guaranteed growth, sales, reach, or virality.
+- No fabricated clients, testimonials, qualifications, results, or metrics.
+- No impersonation, non-consensual deepfakes, or deceptive identity work.
+- No public posting or profile modification without explicit confirmation.
+- Platform dimensions, limits, algorithms, schedules, and recommendations must be verified and dated when used.
+- User analytics are preferred over generic industry averages.
+- Client cases and sensitive business information should be anonymized.
 
-### Dans Claude Code
+## Support
 
-Le skill est disponible via `/enzi` dans Claude Code.
-
-### Dans Codex
-
-```bash
-git clone https://github.com/marceldigbeu/enzi
-cd enzi
-codex .
-```
-
-Ou directement depuis ton projet :
-
-```bash
-codex --instructions path/to/enzi/SKILL.md
-```
-
-Prérequis : [Node.js](https://nodejs.org) puis `npm install -g @openai/codex`
-
-### Prompt d'invocation
-
-```text
-Utilise $enzi pour expliquer cela avec une carte descendante, un nœud critique nommé, un plan Mermaid et des sections architecturales courtes.
-```
-
----
-
-## Exemples de déclenchement
-
-**Enseignement**
-- « Explique cet algorithme en me montrant d'abord la structure globale »
-- « Donne-moi la vue d'ensemble avant la preuve »
-- « Donne le pseudocode et explique chaque ligne »
-
-**Creator & Algorithmes**
-- « Comment fonctionne l'algorithme TikTok / Instagram Reels / LinkedIn ? »
-- « Pourquoi mes Reels ne décollent pas ? »
-- « Comment avoir du reach sur X sans abonnés ? »
-
-**Stratégie de publication**
-- « Construis mon profil créateur »
-- « Quoi poster, quand et comment pour percer sur YouTube Shorts ? »
-- « Génère un plan de contenu sur 4 semaines »
-- « Exporte le plan en HTML »
-
-**Personal Branding**
-- « Construis mon personal branding »
-- « Quel est mon archétype de marque ? »
-- « Quelles couleurs pour mon image de marque ? »
-- « Crée mon identité de marque complète »
+For questions about ENZI Brand OS: **enzibraandos@gmail.com**
